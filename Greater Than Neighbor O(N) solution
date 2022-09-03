@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int T;
+cin>>T;
+while(T--){
+  int N;
+  cin>>N;
+int  arr[N];
+int cpt =0;
+for(int i =0;i<N;i++){
+  cin>>arr[i];
+}
+  if( arr[0]>arr[1]) {cout<<0<<" ";cpt++;}
+ 
+for(int i=1;i<N-1;i++){
+  
+
+    if(arr[i]>arr[i+1]&&arr[i]>arr[i-1]) {cout<<i<<" ";cpt++;}
+ 
+  
+}
+ if( arr[N-1]>arr[N-2]) {cout<<N-1<<" ";cpt ++;}
+ if(cpt == 0){cout<<-1<<" ";}
+  
+  cout<<" "<<endl;
+}
+  
+  return 0;
+}
