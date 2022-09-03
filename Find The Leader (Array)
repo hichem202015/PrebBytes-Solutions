@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int T;
+cin>>T;
+while(T--){
+  int N;
+  cin>>N;
+  int arr[N];
+int j=0;
+
+for(int i=0;i<N;i++){cin>>arr[i];}
+  cout<<arr[N-1]<<" ";
+int maxx = arr[N-1];
+for(int j=N-2;j>=0;j--){
+
+if(arr[j]>=maxx){cout<<arr[j]<<" ";maxx=arr[j];}
+    
+
+  }
+
+  
+  cout<<""<<endl;
+}
+  
+  return 0;
+}
