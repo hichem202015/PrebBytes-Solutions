@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int T;
+cin>>T;
+while(T--){
+  int N;
+  int minn = INT_MAX;
+  cin>>N;
+  int arr[N];
+  int s;
+  int house=0;
+  for(int i=0;i<N;i++){
+    cin>>s;
+    arr[i]=s;
+    
+  }
+    for(int i=0;i<N;i++){
+    if(minn>arr[i]) { minn = arr[i] ;house = i;}
+    
+  }
+  cout<<house<<endl;
+  
+}
+  
+  return 0;
+}
