@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+int M,N;
+cin>>M>>N;
+int mat[M][N];
+int low[M][N];
+int up[M][N];
+for(int i=0;i<M;i++){
+  
+  for(int j=0;j<N;j++){
+    cin>>mat[i][j];
+ if(j>i){
+      low[i][j]=0;
+    }
+    else{
+      low[i][j]=mat[i][j];
+    }
+     if(j<i){
+      up[i][j]= 0;
+    }
+    else{
+       up[i][j] = mat[i][j];
+    }
+    
+  }
+  
+}
+
+
+for(int i=0;i<M;i++){
+  
+  for(int j=0;j<N;j++){
+   
+      cout<<low[i][j]<<" ";
+    
+    
+    
+  }
+  cout<<""<<endl;
+}
+for(int i=0;i<M;i++){
+  
+  for(int j=0;j<N;j++){
+   
+      cout<<up[i][j]<<" ";
+    
+    
+    
+  }
+  cout<<""<<endl;
+}
+
+
+  
+  return 0;
+}
